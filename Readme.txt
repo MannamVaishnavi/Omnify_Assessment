@@ -1,6 +1,6 @@
 => Omnify Assessment Project
 
-This project is a simple Flask-based application that simulates a class booking system. It demonstrates the use of Python, Flask, and JSON for storing and retrieving data.
+This project is a simple Flask-based application that simulates a class booking system. It uses Python, Flask, SQLite, and SQLAlchemy to store and manage data, and returns responses in JSON format via REST APIs.
 
 Features
 - View available classes
