@@ -1,0 +1,5 @@
+Requirements
+
+Flask==3.0.3
+SQLAlchemy==2.0.21
+pytz==2025.1

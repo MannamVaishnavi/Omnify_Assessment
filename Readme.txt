@@ -6,7 +6,7 @@ Features
 - View available classes
 - Book a class
 - View all bookings
-- Simple in-memory storage (data is reset when the server restarts)
+- Simple local storage
 
 Requirements
 - Python 3.8 or later
@@ -45,15 +45,12 @@ API Endpoints (For Postman)
 - Method: GET
 - URL: http://127.0.0.1:5000/classes
 
-2. Get all clients
-- Method: GET
-- URL: http://127.0.0.1:5000/clients
 
-3. Get all bookings
+2. Get all bookings
 - Method: GET
-- URL: http://127.0.0.1:5000/bookings
+- URL: http://127.0.0.1:5000/bookings?email=riya@example.com
 
-4. Book a class  
+3. Book a class  
 - Method: POST  
 - URL: http://127.0.0.1:5000/book  
 - Headers: Content-Type: application/json  
@@ -64,6 +61,8 @@ API Endpoints (For Postman)
     "client_email": "john@example.com"
   }
 
+4. Home route - Shows welcome msg
+URL: http://127.0.0.1:5000/
 
 
 Running Test suite
