@@ -4,7 +4,7 @@ from app import app, db, FitnessClass
 
 #this is a simple test suite for the Flask app
 class SimpleBookingTests(unittest.TestCase):
-    #Runs Before Each Test
+    #Runs Before Each Test case
     def setUp(self):
         app.config.update(TESTING=True, SQLALCHEMY_DATABASE_URI='sqlite:///:memory:')
         self.client = app.test_client()
@@ -19,7 +19,7 @@ class SimpleBookingTests(unittest.TestCase):
             db.session.add(cls)
             db.session.commit()
             self.class_id = cls.id
-    #Runs after Each Test
+    #Runs after Each Test case
     def tearDown(self):
         with app.app_context():
             db.drop_all()
